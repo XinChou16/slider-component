@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font-group</title>
+  <style>
+    body {
+      background-color: #dedede;
+    }
+    .container {
+      display: flex;
+      background-color: #fff;
+      /* align-items: center; */
+      justify-content: space-evenly
+    }
+   .box {
+     border: 1px solid cyan;
+     width: 20%;
+   }
+   .box1 {
+     /* flex: 2; */
+     order: 2;
+   }
+   .box2 {
+     /* flex: 1; */
+     order: 1;
+   }
+   .box3 {
+     /* flex: 1; */
+     order: 3;
+   }
+   .icon {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background-color: #000;
+     vertical-align: middle;
+   }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">
+      <p>main
+        The chance from horizontal to vertical writing can affect
+        not just the layout, but also the typessetting. For exmple
+      </p>
+      <span class="icon"></span>
+      insert <span>center</span>
+    </div>
+    <div class="box box2">
+      <p>left
+        The chance from horizontal to vertical writing can affect
+        not just the layout, but also the typessetting. For exmple
+      </p>
+    </div>
+    <div class="box box3">
+      <p>right
+        The chance from horizontal 
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

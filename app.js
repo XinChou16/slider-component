@@ -22,7 +22,6 @@ class Slider {
     })
 
     // control cursor
-    
     this.cursors.forEach(function(cursor,index) {
       cursor.addEventListener('click',function() {
         mySlider.nav(index)
@@ -36,7 +35,7 @@ class Slider {
     this.calcDistance();
   }
 
-  // 标准化index，使index始终为0,1,2中的一个
+  // 标准化index，当len为3时，使得index始终为0,1,2中的一个
   normalIdx(index,len) {
     return (index + len) % len;
   }
